@@ -6,4 +6,4 @@
 
  // making a replica of a time tracker form a figma 
 
-// Person who Peer Reviewed your assignment
+// Peer Review: Brandon Van Horn - Looks good and almost similar to the figma and the buttons work but could be centered from the top to the middle
