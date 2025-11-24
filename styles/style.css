@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+:root {
+  --primary-blue:hsl(246,80%,60%);
+  --work:hsl(15,100%,70%);
+  --play:hsl(195,74%,62%);
+  --study:hsl(348,100%,68%);
+  --exercise:hsl(145,58%,55%);
+  --social:hsl(264,64%,52%);
+  --self-care:hsl(43,84%,65%);
+  --dark-blue:hsl(235,46%,20%);
+  --very-dark-blue:hsl(226,43%,10%);
+  --desaturated-blue:hsl(235,45%,61%);
+  --pale-blue:hsl(236,100%,87%);
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Rubik, sans-serif;
+}
+
+body{
+  background: var(--very-dark-blue);
+  color:white;
+  padding:20px;
+  display:flex;
+  justify-content:center;
+}
+
+.pfp{
+  width:70px;
+  border-radius:50%;
+  border:3px solid white;
+  margin-bottom:20px;
+}
+
+.main-wrap{
+  display:grid;
+  grid-template-columns:260px 1fr;
+  gap:20px;
+  max-width:1200px;
+  width:100%;
+}
+
+.top-part{
+  background:var(--primary-blue);
+  padding:40px 50px 60px 25px;
+  border-radius:15px;
+}
+
+.left-box{
+  background:var(--dark-blue);
+  border-radius:18px;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+}
+
+.small-text{
+  color:var(--pale-blue);
+  font-size:14px;
+}
+
+.big-name{
+  font-weight:300;
+  font-size:32px;
+}
+
+.bottom-part{
+  padding:30px;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.bottom-part button{
+  background:none;
+  border:0;
+  color:var(--desaturated-blue);
+  font-size:18px;
+  cursor:pointer;
+}
+
+.bottom-part button:hover,
+.bottom-part .active{
+  color:white;
+}
+
+.card-area{
+  display:grid;
+  gap:20px;
+  grid-template-columns:repeat(3,1fr);
+}
+
+.card-color{
+  height:80px;
+  background-repeat:no-repeat;
+  background-position:right 15px top 10px;
+}
+
+.one-card{
+  border-radius:15px;
+  overflow:hidden;
+  position:relative;
+}
+
+.card-box{
+  background:var(--dark-blue);
+  padding:30px;
+  margin-top:-15px;
+}
+
+.card-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.card-head img{
+  width:18px;
+}
+
+.hrs-now{
+  font-size:40px;
+}
+
+.hrs-before{
+  color:var(--pale-blue);
+}
+
+/* ICON COLORS */
+.one-card.work .card-color{ background-color:var(--work); background-image:url('/images/icon-work.svg'); }
+.one-card.play .card-color{ background-color:var(--play); background-image:url('/images/icon-play.svg'); }
+.one-card.study .card-color{ background-color:var(--study); background-image:url('/images/icon-study.svg'); }
+.one-card.exercise .card-color{ background-color:var(--exercise); background-image:url('/images/icon-exercise.svg'); }
+.one-card.social .card-color{ background-color:var(--social); background-image:url('/images/icon-social.svg'); }
+.one-card.self-care .card-color{ background-color:var(--self-care); background-image:url('/images/icon-self-care.svg'); }
+
